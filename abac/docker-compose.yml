@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  fastapi-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - DB_HOST=redis
+    ports:
+      - "80:80"
+    depends_on:
+      - redis
+    links:
+      - redis
+
+  redis:
+    image: redis/redis-stack-server
+    ports:
+      - "6379:6379"
