@@ -24,12 +24,12 @@ Before you get started, ensure you have the following prerequisites installed on
 
 1. Clone the repository to your local machine:
     ```bash
-    git clone abac-dekel
+    git clone https://github.com/dekel1145-public/ABAC-sys.git
     ```
 
 2. Change your working directory to the project folder:
     ```bash
-    cd abac-dekel
+    cd ABAC-sys
     ```
 
 3. Build and start the application and the Redis database using Docker Compose:
